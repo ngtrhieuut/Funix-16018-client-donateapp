@@ -59,7 +59,7 @@ function Register() {
       return setUser({ ...user, err: "Password did not match.", success: "" });
 
     try {
-      const res = await axios.post("/user/register", {
+      const res = await axios.post("https://funix16018-doante-app.herokuapp.com/user/register", {
         username: user.username,
         firstname: user.firstname,
         lastname: user.lastname,
