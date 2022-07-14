@@ -20,7 +20,7 @@ function SignInWithOrtherNetwork() {
   const responseGoogle = async (response) => {
     console.log(response);
     try {
-      const res = await axios.post("/user/google_login", {
+      const res = await axios.post("https://funix16018-doante-app.herokuapp.com/user/google_login", {
         tokenId: response.tokenId,
       });
 
