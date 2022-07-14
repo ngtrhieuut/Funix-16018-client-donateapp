@@ -17,7 +17,7 @@ function ActiveUser() {
     if (token) {
       const activationEmail = async () => {
         try {
-          const res = await axios.post("/user/activation", { token });
+          const res = await axios.post("https://funix16018-doante-app.herokuapp.com/user/activation", { token });
           setSuccess(res.data.msg);
         } catch (err) {
           err.response.data.msg && setErr(err.response.data.msg);
