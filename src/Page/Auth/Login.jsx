@@ -36,7 +36,7 @@ function Login() {
       const LoggedIn = localStorage.getItem("LoggedIn");
       if (LoggedIn) {
         const getToken = async () => {
-          const res = await axios.post("/user/refresh_token", null);
+          const res = await axios.post("https://funix16018-doante-app.herokuapp.com/user/refresh_token", null);
           dispatch({ type: "GET_TOKEN", payload: res.data.access_token });
         };
         getToken();
