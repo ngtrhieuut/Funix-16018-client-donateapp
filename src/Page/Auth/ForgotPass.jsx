@@ -27,7 +27,7 @@ function ForgotPass() {
       return setData({ ...data, err: "Invalid emails.", success: "" });
 
     try {
-      const res = await axios.post("/user/forgot", { username });
+      const res = await axios.post("https://funix16018-doante-app.herokuapp.com/user/forgot", { username });
 
       return setData({ ...data, err: "", success: res.data.msg });
     } catch (err) {
