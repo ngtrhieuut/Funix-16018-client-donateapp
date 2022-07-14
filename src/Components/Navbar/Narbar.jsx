@@ -14,7 +14,7 @@ function Navbar(appName) {
     dispatch({ type: "DELETE_TOKEN" });
     dispatch({ type: "LOG_OUT" });
     try {
-      await axios.get("/user/logout");
+      await axios.get("https://funix16018-doante-app.herokuapp.com/user/logout");
       localStorage.removeItem("LoggedIn");
       window.location.href = "/";
     } catch (err) {
