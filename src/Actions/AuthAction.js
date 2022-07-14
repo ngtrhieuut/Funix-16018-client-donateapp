@@ -28,7 +28,7 @@ export const confirmEmail = (formData, navigate) => async (dispatch) => {
 };
 
 export const fetchUser = async (token) => {
-    const res = await axios.get('/user/infor', {
+    const res = await axios.get('https://funix16018-doante-app.herokuapp.com/user/infor', {
         headers: {Authorization: token}
     })
     return res
