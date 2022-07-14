@@ -25,7 +25,7 @@ function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("/user/login", {
+      const res = await axios.post("https://funix16018-doante-app.herokuapp.com/user/login", {
         username: user.username,
         password: user.password,
       });
