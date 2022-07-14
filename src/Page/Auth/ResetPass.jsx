@@ -37,7 +37,7 @@ function ResetPass() {
 
     try {
       const res = await axios.post(
-        "/user/reset",
+        "https://funix16018-doante-app.herokuapp.com/user/reset",
         { password },
         {
           headers: { Authorization: token },
